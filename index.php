@@ -7,19 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript">
-        $(function () {
-            $('#form').submit(function (e) {
-                e.preventDefault();
-                var data = $(this).serialize();
-                $.ajax({
-                    type: "POST",
-                    url: "index.php",
-                    data: data,
-                    success: function (result) {
-                        $('#result').html(result);
-                    }
-                });
-            });
+        // $(function () {
+        //     $('#form').submit(function (e) {
+        //         e.preventDefault();
+        //         var data = $(this).serialize();
+        //         $.ajax({
+        //             type: "POST",
+        //             url: "index.php",
+        //             data: data,
+        //             success: function (result) {
+        //                 $('#result').html(result);
+        //             }
+        //         });
+        //     });
     </script>
     <title>Document</title>
 </head>
