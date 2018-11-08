@@ -15,60 +15,32 @@
 </form>
 
 
-<script>
-    $(document).ready(function () {
-
-        $('#upload').submit(function () {
-            $.ajax({
-                type: "POST",
-                url: "index.php",
-                data: $(this).serialize()
-            }).done(function () {
-
-                alert("ok!!");
-
-                $("#upload").trigger("reset");
-                <?php echo 'nn'. DFG();?>
-            });
-            return false;
-        });
-
-    });
-</script>
-
-
 <?php
-DFG();
-function DFG()
-{
+
 // Пути загрузки файлов
-    $path = './gallery/';
-    $tmp_path = 'tmp/';
-    $types = array('image/gif', 'image/png', 'image/jpeg'); // Допустимый тип файла
-    $size = 1024000; // Максимальный размер файла
+$path = './gallery/';
+$tmp_path = 'tmp/';
+$types = array('image/gif', 'image/png', 'image/jpeg'); // Допустимый тип файла
+$size = 10240000; // Максимальный размер файла
 
 // Обработка запроса
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        // Проверяем тип файла
-        if (!in_array($_FILES['picture']['type'], $types))
-            die('Неверный тип файла. <a href="?">Попробовать другой файл?</a>');
+    // Проверяем тип файла
+    if (!in_array($_FILES['picture']['type'], $types))
+        die('Неверный тип файла. <a href="?">Попробовать другой файл?</a>');
 
-        // Проверяем размер файла
-        if ($_FILES['picture']['size'] > $size)
-            die('Недопустимый размер файла. <a href="?">Попробовать другой файл?</a>');
+    // Проверяем размер файла
+    if ($_FILES['picture']['size'] > $size)
+        die('Недопустимый размер файла. <a href="?">Попробовать другой файл?</a>');
 
-        // Загрузка файла и вывод сообщения
-        if (!copy($_FILES['picture']['tmp_name'], $path . $_FILES['picture']['name'])) {
-            echo 'Что-то пошло не так';
-        } else
-            echo 'картинка успешно загружена <a href="gallery.php">Перетий в галерею</a> ';
-    }
-return "eerett";
+    // Загрузка файла и вывод сообщения
+    if (!copy($_FILES['picture']['tmp_name'], $path . $_FILES['picture']['name'])) {
+        echo 'Что-то пошло не так';
+    } else
+        echo 'картинка успешно загружена <a href="gallery.php">Перетий в галерею</a> ';
 }
-
 ?>
-
 
 </body>
 </html>
