@@ -16,7 +16,7 @@ class ImageGallery
     {
         // Проверяем тип файла
         if (!in_array($fileType, array('image/gif', 'image/png', 'image/jpeg')))
-            throw new Exception('Неверный тип файла. ');
+            throw new Exception('Неверный тип файла. '.'<a href="?">Попробовать еще раз.<a/>');
 
         // Проверяем размер файла
         if ($_FILES['myfile']['size'] > $this->Size)
@@ -24,7 +24,7 @@ class ImageGallery
 
         // Загрузка файла
         if (!move_uploaded_file('' . $sourcePath, '' . $this->GalleryPath . '' . $originalName)) {
-            throw new Exception('Что-то пошло не так');
+            throw new Exception('Что-то пошло не так'.'<a href="?">Попробовать еще раз.<a/>');
         } else {
             throw new Exception('картинка успешно загружена '.'<a href="gallery.php">Посмотреть<a/>');
         }
