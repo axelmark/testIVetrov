@@ -16,7 +16,7 @@
 
                 $.ajax({
                     type: 'POST',
-                    url: 'script.php',
+                    url: 'pst.php',
                     data: new FormData(this),
                     contentType: false,
                     cache: false,
