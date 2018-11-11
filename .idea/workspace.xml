@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30de89c5-39f8-42e7-8c35-9d77975576cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/script.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,14 +73,14 @@
           <entry key="gitignore" value="10" />
           <entry key="html" value="9" />
           <entry key="js" value="18" />
-          <entry key="php" value="3657" />
+          <entry key="php" value="3736" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="9" />
           <entry key="JavaScript" value="18" />
-          <entry key="PHP" value="3657" />
+          <entry key="PHP" value="3736" />
           <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
@@ -91,7 +91,7 @@
           <entry key="html" value="1" />
           <entry key="jpg" value="1" />
           <entry key="js" value="1" />
-          <entry key="php" value="9" />
+          <entry key="php" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -99,7 +99,7 @@
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="9" />
+          <entry key="PHP" value="10" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -110,36 +110,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+            <state relative-caret-position="459">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gallery.php">
-          <provider editor-type-id="csv-data-editor">
-            <state>
-              <format>
-                <csv-format name="Tab-separated (TSV)" id="Tab-separated (TSV)_id">
-                  <data>
-                    <record-format prefix="" suffix="" nullText="" quotationPolicy="as needed" valueSeparator="&#9;" recordSeparator="&#10;">
-                      <quotation>
-                        <quotes left="&quot;" right="&quot;" leftEscaped="&quot;&quot;" rightEscaped="&quot;&quot;" />
-                        <quotes left="'" right="'" leftEscaped="''" rightEscaped="''" />
-                      </quotation>
-                    </record-format>
-                  </data>
-                </csv-format>
-              </format>
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="408">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -169,8 +153,8 @@
         <option value="$USER_HOME$/Downloads/icp_example3/handler.php" />
         <option value="$PROJECT_DIR$/index3.php" />
         <option value="$USER_HOME$/Downloads/icp_example3/index.html" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index2.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/script.php" />
       </list>
     </option>
@@ -266,12 +250,12 @@
       <workItem from="1541666838208" duration="751000" />
       <workItem from="1541668026911" duration="28897000" />
       <workItem from="1541868765966" duration="13933000" />
-      <workItem from="1541932691670" duration="12967000" />
+      <workItem from="1541932691670" duration="13710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91609000" />
+    <option name="totallyTimeSpent" value="92352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -354,13 +338,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/me.jpg" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/icp_example3/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -405,10 +382,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/script.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
