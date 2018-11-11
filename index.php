@@ -24,7 +24,7 @@
 
                     success: function (result) {
                         $('#my_form').trigger('reset');
-                        $('#info').append(result);
+                        $('#info').html(result);
                         //alert(result);
                     },
                 });

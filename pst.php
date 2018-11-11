@@ -4,11 +4,15 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
-    $tmp = $_FILES['myfile']['tmp_name'];
-    $orig_name = $_FILES['myfile']['name'];
+    $sourcePath = $_FILES['myfile']['tmp_name'];
+    $originalName = $_FILES['myfile']['name'];
+    $fileType = $_FILES['myfile']['type'];
 
-    $file = new ImageGallery(123);
-    $file->SAVE($tmp, $orig_name);
+    try {
+        $file = new ImageGallery(123);
+        $file->Save($sourcePath, $fileType, $originalName);
+    } catch (Exception $e) {
+        die($e->getMessage());
+    }
+
 }
-
-
