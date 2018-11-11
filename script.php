@@ -32,6 +32,6 @@ class ImageGallery
 
     public function GetList()
     {
-        //echo "tralala!";
+        //echo "tralalaa!";
     }
 }
