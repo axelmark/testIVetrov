@@ -26,7 +26,7 @@ class ImageGallery
         if (!move_uploaded_file('' . $sourcePath, '' . $this->GalleryPath . '' . $originalName)) {
             throw new Exception('Что-то пошло не так');
         } else {
-            throw new Exception('картинка успешно загружена ');
+            throw new Exception('картинка успешно загружена '.'<a href="gallery.php">Посмотреть<a/>');
         }
     }
 
