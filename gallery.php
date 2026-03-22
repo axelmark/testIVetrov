@@ -1,36 +1,67 @@
-<!doctype html>
-<html lang="en">
+<?php
+require_once 'classes/ImageManager.php';
+
+$manager = new ImageManager();
+$images = $manager->getAllImages();
+?>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея изображений</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .grid-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .grid-item:hover {
+            transform: scale(1.02);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+        }
+        .empty {
+            text-align: center;
+            font-size: 18px;
+            color: #6c757d;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-
-<?php
-$dir = "gallery/";
-$scan = array_diff(scandir($dir, 1), array('..', '.', '.DS_Store'));
-foreach ($scan as $i) {
-    ?>
-
-    <div class="square">
-        <div class="content">
-            <div class="table">
-                <div class="table-cell">
-
-                    <?php echo '<img class="rs" src="' . $dir . $i . '"/>';
-                    echo '<br>' . $dir . $i ?>
-
-                </div>
+<h1>Галерея загруженных изображений</h1>
+<?php if (empty($images)): ?>
+    <div class="empty">Нет загруженных изображений</div>
+<?php else: ?>
+    <div class="grid">
+        <?php foreach ($images as $image): ?>
+            <div class="grid-item">
+                <img src="uploads/<?= htmlspecialchars($image) ?>" alt="Изображение">
             </div>
-        </div>
+        <?php endforeach; ?>
     </div>
-
-<?php } ?>
-
+<?php endif; ?>
 </body>
 </html>
-
